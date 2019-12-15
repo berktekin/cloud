@@ -1,5 +1,7 @@
 <?php
   session_start();
+
+include "db.php";
   $isIndex = 1;
   if(array_key_exists('teacher_id',$_SESSION) && isset($_SESSION['teacher_id'])) {
    header('Location: teacher.php');
